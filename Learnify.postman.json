@@ -1,0 +1,697 @@
+{
+	"info": {
+		"_postman_id": "0e7bdc51-b07b-469f-9f41-caabf18e4324",
+		"name": "Learnify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9301783"
+	},
+	"item": [
+		{
+			"name": "Module 1",
+			"item": [
+				{
+					"name": "Get Weather Forecast",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/weatherforecast",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"weatherforecast"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 3",
+			"item": [
+				{
+					"name": "GetCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/categories/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 5",
+			"item": [
+				{
+					"name": "Not Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/errors/notfound",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"errors",
+								"notfound"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Server Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/errors/servererror",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"errors",
+								"servererror"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bad Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/errors/badrequest",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"errors",
+								"badrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bad Request ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/errors/badrequest/hello",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"errors",
+								"badrequest",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unknown Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/errors/japan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"errors",
+								"japan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Authorization",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/errors/authcheck",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"errors",
+								"authcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 7",
+			"item": [
+				{
+					"name": "Sort By Price Ascending",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses?sort=priceAscending",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "priceAscending"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sort By Price Descending",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses?sort=priceDescending",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "priceDescending"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses?categoryId=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "categoryId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pagination Without Parameters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pagination Page Index 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses?pageIndex=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "pageIndex",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pagination Page Size 8 Page Index 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses?pageIndex=2&pageSize=8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "pageIndex",
+									"value": "2"
+								},
+								{
+									"key": "pageSize",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search dev",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/courses?search=dev",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "dev"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 8",
+			"item": [
+				{
+					"name": "Add Course to Basket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Basket?courseId=41E0EB01-5715-4376-912C-49FE04357CC5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Basket"
+							],
+							"query": [
+								{
+									"key": "courseId",
+									"value": "41E0EB01-5715-4376-912C-49FE04357CC5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Basket",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Basket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Basket?courseId=41E0EB01-5715-4376-912C-49FE04357CC5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Basket"
+							],
+							"query": [
+								{
+									"key": "courseId",
+									"value": "41E0EB01-5715-4376-912C-49FE04357CC5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 10",
+			"item": [
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJib2JAdGVzdC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYm9iIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU3R1ZGVudCIsImV4cCI6MTY0ODMwOTEwNX0.QsXRgYCju1lXRbu_X7A1wMO-lfxAeiJS_yM1h6M4eEF9EiJoqNt0W9y7pkvCA3aQpPjNmRnvL7xNwZdZQoLbtQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"student@test.com\",\n  \"password\": \"Password@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Users/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login fail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"student@test.com\",\n  \"password\": \"Password@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Users/Login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"newstudent@test.com\",\n  \"password\": \"Password@123\",\n  \"username\": \"newstudent\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Users/Register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"Register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register fail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"newstudent@test.com\",\n  \"password\": \"Pass\",\n  \"username\": \"newstudent\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Users/Register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"Register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 11",
+			"item": [
+				{
+					"name": "Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Payments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Payments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 12",
+			"item": [
+				{
+					"name": "Courses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"Rating\": 4.4,\n    \"Instructor\": \"Franchesca\",\n    \"Title\": \"Learn Russian with Franchesca\",\n    \"Price\": 27.99,\n    \"SubTitle\": \"This is the description of the test course\",\n    \"Description\": \"This is the description placeholder\",\n    \"Students\": 20,\n    \"Level\": \"Beginner\",\n    \"Language\": \"English\",\n    \"CategoryId\": 3\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Lectures",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Lectures"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module 13",
+			"item": [
+				{
+					"name": "AddRole",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:5000"
+		}
+	]
+}
